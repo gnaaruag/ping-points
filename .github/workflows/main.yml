@@ -19,4 +19,12 @@ jobs:
       - name: install deps
         run: npm install
 
-# add tests and linting later
+      # add lint and test later
+
+      - name: Configure npm for publishing
+        run: npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
+
+      - name: Publish to npm
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
