@@ -1,0 +1,22 @@
+{
+  "name": "@ping-suite/ping-points",
+  "version": "1.0.0",
+  "description": "Backend endpoints for auto-pinger suite, for server keep-alive, server health etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnaaruag/ping-points.git"
+  },
+  "author": "gnaaruag <gaurang40304@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gnaaruag/ping-points/issues"
+  },
+  "homepage": "https://github.com/gnaaruag/ping-points#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
